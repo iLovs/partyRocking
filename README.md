@@ -1,2 +1,2 @@
 # partyRocking
-partyRocking 
+partyRocking iOS Course project.
