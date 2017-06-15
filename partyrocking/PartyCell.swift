@@ -19,7 +19,7 @@ class PartyCell: UITableViewCell {
         
     }
 
-    func updateUI(partyRock: partyRock) {
+    func updateUI(partyRock: PartyRock) {
         videoTitle.text = partyRock.videoTitle
         
         let url = URL(string: partyRock.imageURL)

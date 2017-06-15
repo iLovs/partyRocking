@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -158,11 +158,23 @@
                                     <constraint firstAttribute="height" constant="219" id="eEJ-cf-PWr"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-T5-N0d">
+                                <rect key="frame" x="21" y="269" width="333" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="cZp-iT-NOr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="StillTime-Regular" family="Still Time" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ClB-T5-N0d" firstAttribute="top" secondItem="vom-eS-3ZM" secondAttribute="bottom" constant="50" id="HL0-Ge-fgt"/>
+                            <constraint firstItem="ClB-T5-N0d" firstAttribute="leading" secondItem="q18-WR-VRb" secondAttribute="leadingMargin" constant="5" id="IAI-6p-FtX"/>
                             <constraint firstAttribute="trailing" secondItem="vom-eS-3ZM" secondAttribute="trailing" id="KxE-XY-4Jj"/>
                             <constraint firstItem="vom-eS-3ZM" firstAttribute="top" secondItem="q18-WR-VRb" secondAttribute="top" id="Ydq-69-TWB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ClB-T5-N0d" secondAttribute="trailing" constant="5" id="ZoM-cl-00X"/>
                             <constraint firstItem="vom-eS-3ZM" firstAttribute="leading" secondItem="q18-WR-VRb" secondAttribute="leading" id="jCg-Gx-D3t"/>
                         </constraints>
                     </view>
