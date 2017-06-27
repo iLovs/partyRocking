@@ -151,13 +151,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vom-eS-3ZM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="219" id="eEJ-cf-PWr"/>
-                                </constraints>
-                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-T5-N0d">
                                 <rect key="frame" x="21" y="269" width="333" height="51"/>
                                 <constraints>
@@ -167,17 +160,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vom-eS-3ZM">
+                                <rect key="frame" x="0.0" y="37" width="375" height="219"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="219" id="eEJ-cf-PWr"/>
+                                </constraints>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ClB-T5-N0d" firstAttribute="top" secondItem="vom-eS-3ZM" secondAttribute="bottom" constant="50" id="HL0-Ge-fgt"/>
+                            <constraint firstItem="ClB-T5-N0d" firstAttribute="top" secondItem="vom-eS-3ZM" secondAttribute="bottom" constant="13" id="HL0-Ge-fgt"/>
                             <constraint firstItem="ClB-T5-N0d" firstAttribute="leading" secondItem="q18-WR-VRb" secondAttribute="leadingMargin" constant="5" id="IAI-6p-FtX"/>
                             <constraint firstAttribute="trailing" secondItem="vom-eS-3ZM" secondAttribute="trailing" id="KxE-XY-4Jj"/>
-                            <constraint firstItem="vom-eS-3ZM" firstAttribute="top" secondItem="q18-WR-VRb" secondAttribute="top" id="Ydq-69-TWB"/>
+                            <constraint firstItem="vom-eS-3ZM" firstAttribute="top" secondItem="q18-WR-VRb" secondAttribute="top" constant="37" id="Ydq-69-TWB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ClB-T5-N0d" secondAttribute="trailing" constant="5" id="ZoM-cl-00X"/>
                             <constraint firstItem="vom-eS-3ZM" firstAttribute="leading" secondItem="q18-WR-VRb" secondAttribute="leading" id="jCg-Gx-D3t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLbl" destination="ClB-T5-N0d" id="pWB-Hp-Z6v"/>
+                        <outlet property="webView" destination="vom-eS-3ZM" id="hAr-TW-uRE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tk6-fs-IsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

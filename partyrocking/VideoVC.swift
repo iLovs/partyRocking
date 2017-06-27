@@ -12,6 +12,8 @@ class VideoVC: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     
+    @IBOutlet weak var titleLbl: UILabel!
+    
     private var _partyRock: PartyRock!
     
     var partyRock: PartyRock {
@@ -25,7 +27,8 @@ class VideoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLbl.text = partyRock.videoTitle
+        webView.loadHTMLString(partyRock.videoURL,baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
