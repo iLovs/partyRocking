@@ -9,6 +9,10 @@
 import UIKit
 
 class VideoVC: UIViewController {
+    
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
     @IBOutlet weak var webView: UIWebView!
     
